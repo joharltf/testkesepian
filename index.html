@@ -10,11 +10,11 @@
     <header
       class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10"
     >
-      <div class="container">
+      <div class="container mx-auto">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-primary block py-6">
-              yuktespsikologi</a
+            <a href="#home" class="font-bold text-lg text-primary block py-6"
+              >yuktespsikologi</a
             >
           </div>
           <div class="flex items-center px-4">
@@ -32,7 +32,6 @@
                 class="hamburger-line duration-300 ease-in-out origin-bottom-left"
               ></span>
             </button>
-
             <nav
               id="nav-menu"
               class="hidden absolute p-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
@@ -45,18 +44,26 @@
                     >Beranda</a
                   >
                 </li>
-                <li class="group">
-                  <a
-                    href="tes.html"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Test Psikologi</a
-                  >
-                </li>
+                <li class="group relative"></li>
                 <li class="group">
                   <a
                     href="#about"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >Tentang</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#dynamic-section"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Tes Bidang</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
                   >
                 </li>
               </ul>
@@ -68,16 +75,16 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-20 pb-10">
-      <div class="container">
+    <section id="home" class="pt-20">
+      <div class="container mx-auto">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1
               class="text-base font-semibold text-primary md:text-xl lg:text-2xl"
             >
               Hallo semua🖐 yuk
-              <span class="block font-bold text-dark text-4xl mt-2">
-                Tes Kesepianmu</span
+              <span class="block font-bold text-dark text-4xl mt-2"
+                >Tes Kesepianmu</span
               >
             </h1>
             <h2 class="font-medium text-secondary text-lg mb-5">
@@ -89,9 +96,8 @@
               membantu menangani masalah psikologi
               <span class="text-dark font-bold">berlarut larut.</span>
             </p>
-
             <a
-              href="tes.html"
+              href="#dynamic-section"
               class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               >Tes Sekarang</a
             >
@@ -122,11 +128,11 @@
         </div>
       </div>
     </section>
-    <!-- Hero Section Stop  -->
+    <!-- Hero Section Stop -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-20 pb-32">
-      <div class="container">
+    <section id="about" class="pt-24 pb-32">
+      <div class="container mx-auto">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4 class="font-bold uppercase text-primary text-lg mb-3">
@@ -138,11 +144,11 @@
             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
               Tes psikologi adalah suatu cara untuk mengukur dan mengevaluasi
               fungsi psikologis seseorang, seperti kemampuan kognitif,
-              kepribadian, kecenderungan emosional, dan perilaku.
+              kepribadian, kecenderungan emosional, dan perilaku.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="font-bold text-dark text-2xl mb-3 lg:text- lg:pt-10">
+            <h3 class="font-bold text-dark text-2xl mb-3 lg:text-3xl lg:pt-10">
               Tentang Psikologi
             </h3>
             <p class="font-medium text-base text-secondary max-w-xl mb-6">
@@ -159,6 +165,180 @@
       </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Dynamic Section Start -->
+    <section id="dynamic-section" class="pt-24 pb-32">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4">
+            <h4
+              class="font-bold uppercase text-primary text-lg mb-3"
+              id="bidang-title"
+            >
+              Tes Bidang
+            </h4>
+            <select
+              id="bidang-select"
+              class="block w-full bg-white border border-gray-300 rounded-lg shadow-sm py-3 px-4 focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
+              role="listbox"
+            >
+              <option value="" class="hidden text-gray-400">
+                Pilih Bidang
+              </option>
+              <option value="bidangpribadi" class="text-gray-900">
+                Bidang Pribadi
+              </option>
+              <option value="bidangsosial" class="text-gray-900">
+                Bidang Sosial
+              </option>
+              <option value="bidangkarir" class="text-gray-900">
+                Bidang Karir
+              </option>
+              <option value="bidangbelajar" class="text-gray-900">
+                Bidang Belajar
+              </option>
+            </select>
+            <div class="embed-container">
+              <iframe
+                id="bidang-iframe"
+                src=""
+                width="100%"
+                height="800"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                scrolling="yes"
+              >
+                Memuat...
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Start -->
+    <section id="contact" class="bg-gray-100 py-16 pt-24 pb-32">
+      <div class="container mx-auto">
+        <!-- Tambahkan class "mx-auto" di sini -->
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full lg:w-1/2 px-4">
+            <h2 class="text-2xl font-bold text-center text-primary mb-6">
+              Hubungi Kami
+            </h2>
+            <p class="text-base text-center text-secondary mb-6">
+              Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan
+              atau masukan. Kami akan senang mendengarnya!
+            </p>
+            <form
+              class="mb-6"
+              action="mailto:timabkunipma@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700"
+                  >Pesan</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="form-textarea mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="inline-block bg-primary text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out hover:bg-opacity-80"
+                >
+                  Kirim Pesan
+                </button>
+              </div>
+            </form>
+            <p class="text-base text-center text-secondary">
+              Anda juga bisa mengirimkan email ke
+              <a
+                href="mailto:info@yuktespsikologi.com"
+                class="text-primary font-semibold"
+                >timabkunipma@gmail.com</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section End -->
+
+    <!-- Contact Section End -->
+
+    <!-- Contact Section End -->
+    <!-- Dynamic Section End -->
     <script src="js/script.js"></script>
+    <script>
+      // Define the URLs for the Google Forms
+      const formUrls = {
+        bidangpribadi:
+          "https://docs.google.com/forms/d/e/1FAIpQLSeVy_Nef3-O25RbfoaPHgpSxqRcz_ZIqD6bj5fu5hvjqK10Ng/viewform?embedded=true",
+        bidangsosial:
+          "https://docs.google.com/forms/d/e/1FAIpQLSe_CA1qU4Gv3Ak7pYnPNsqrNWAHDHpWaguuq2xU5crk_i9kuQ/viewform?embedded=true", // replace with your actual URLs
+        bidangkarir:
+          "https://docs.google.com/forms/d/e/1FAIpQLSft9yF5EXsDKuna-ptoNNF4taZy7RLSs2bYZKPq1q2mbBDD_w/viewform?embedded=true", // replace with your actual URLs
+        bidangbelajar:
+          "https://docs.google.com/forms/d/e/1FAIpQLSdhOzDuXf4ptLcx--m0VuNnc1Qx3YBa6GQadQ-iJdWA7mTKeA/viewform?embedded=true", // replace with your actual URLs
+      };
+
+      document
+        .getElementById("bidang-select")
+        .addEventListener("change", function () {
+          const selectedBidang = this.value;
+          const dynamicSection = document.getElementById("dynamic-section");
+          const iframe = document.getElementById("bidang-iframe");
+          const bidangTitle = document.getElementById("bidang-title");
+
+          if (formUrls[selectedBidang]) {
+            iframe.src = formUrls[selectedBidang];
+            bidangTitle.textContent = selectedBidang.replace(
+              "bidang",
+              "Bidang "
+            );
+            dynamicSection.classList.remove("hidden");
+            dynamicSection.scrollIntoView({ behavior: "smooth" });
+          } else {
+            dynamicSection.classList.add("hidden");
+          }
+        });
+    </script>
   </body>
 </html>
