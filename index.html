@@ -4,6 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/output.css" rel="stylesheet" />
+    <style>
+      /* Shader untuk formulir bagian bawah */
+      #contact form::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #14b8a6; /* Warna batas formulir */
+        border-radius: 8px; /* Bulatan sudut */
+        z-index: -1; /* Taruh di bawah elemen lain */
+      }
+
+      #contact form {
+        position: relative; /* Tetapkan posisi relatif */
+      }
+      /* Shader untuk formulir bagian bawah */
+      #dynamic-section .embed-container::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #14b8a6; /* Warna batas formulir */
+        border-radius: 8px; /* Bulatan sudut */
+        z-index: -1; /* Taruh di bawah elemen lain */
+      }
+
+      #dynamic-section .embed-container {
+        position: relative; /* Tetapkan posisi relatif */
+      }
+    </style>
   </head>
   <body>
     <!-- Header Section Start -->
